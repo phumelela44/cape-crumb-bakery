@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phumelela44.github.io/cape-crumb-bakery/sitemap.xml
