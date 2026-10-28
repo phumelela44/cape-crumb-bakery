@@ -1,10 +1,25 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial, sans-serif;background:#f9f3ec;color:#333;line-height:1.6}
+header{background:#5a2d0c;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:24px}
+nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:bold}
+nav a:hover{color:#ffd699}
+.hero{padding:60px 20px;text-align:center;background:#e9d5bc}
+.hero h2{font-size:32px;margin-bottom:10px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px}
+.card{background:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+.card img{width:100%;border-radius:8px}
+footer{background:#5a2d0c;color:#fff;text-align:center;padding:15px;margin-top:20px}
+.gallery-img{cursor:pointer;max-width:200px;margin:10px;transition:0.3s}
+.gallery-img:hover{transform:scale(1.05)}
+#lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;z-index:999}
+#lightbox.active{display:flex}
+#lightbox img{max-width:90%;max-height:90%}
+
 /* Part 3 Requirements */
-.hamburger { display: none; cursor: pointer; font-size: 24px; }
-.gallery-img { cursor: pointer; max-width: 200px; margin: 10px; }
-#lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000; }
-#lightbox-img { max-width: 90%; max-height: 90%; }
-@media (max-width: 768px) {
-  .hamburger { display: block; }
-  nav { display: none; flex-direction: column; }
-  nav.active { display: flex; }
+.hamburger{display:none;cursor:pointer;font-size:24px}
+@media(max-width:768px){
+.hamburger{display:block}
+nav{display:none;flex-direction:column;position:absolute;top:60px;left:0;background:#5a2d0c;width:100%;padding:10px}
+nav.active{display:flex}
 }
