@@ -1,4 +1,12 @@
-/* Hamburger - Part 3 Requirement */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #FFF8E1;
+  color: #3E2723;
+  line-height: 1.6;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -9,6 +17,11 @@ header {
   position: relative;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 nav {
   display: flex;
   gap: 20px;
@@ -17,6 +30,11 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -25,6 +43,41 @@ nav a {
   cursor: pointer;
 }
 
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero img {
+  max-width: 90%;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #5D4037;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+footer {
+  background: #3E2723;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* MOBILE - Hamburger */
 @media(max-width: 768px) {
   .hamburger {
     display: block;
